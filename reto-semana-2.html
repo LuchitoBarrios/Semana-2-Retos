@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETOS - SEMANA 2</title>
+    <style>
+        .sec1{
+            display:flex;
+            /* text-align: center; */
+            justify-content: center;
+            flex-direction: column;
+        }
+        #h1-1{
+            border-bottom:2px solid black;
+        }
+        form{
+            justify-content: center;
+        }
+        .op1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            justify-content: center;
+        }
+        .op1 > input{
+            height:30px;
+            width:305px;
+            margin-bottom: 15px;
+        }
+        .op1 > input[placeholder]{
+            padding:15px;
+        }
+        .op1 > input[name="next"]{
+            height:40px;
+            width:120px;
+            color:white;
+            background-color: #12ad5f;
+            font-weight: bold;
+        }
+        .op1 >h2{
+            color:#524f5e;
+
+        }
+        .op1 >h3{
+            color:#acafb8;
+        }
+        .sec2{
+            margin-left: auto;
+            margin-right: auto;
+            width:400px;
+        }
+        .op2{
+            background-color: #f5f5f5;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .op2 > label{
+            font-weight: bold;
+        }
+        .op2 > input{
+            width:320px;
+            height: 20px;
+        }
+        .op2 >textarea{
+            height:40px;
+            width:320px;
+        }
+        .op2 input[type="radio"]{
+            width:12px;
+            height:12px;
+        }
+        .op2 > select{
+            width:300px;
+            height:20px;
+        }
+        .op2 >input[type="checkbox"]{
+            width:12px;
+            height:12px;
+        }
+        .op2 >input[name="update"]{
+            height:40px;
+            width:120px;
+            color:white;
+            background-color: #3a77bb;
+            font-weight: bold;
+        }
+        .op2 >input{
+            margin-bottom: 15px;
+        }
+        .sec3{
+            margin-left: auto;
+            margin-right: auto;
+            width:400px;
+        }
+        .op3{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e4f2fd;
+            padding-left: 15px;
+            padding-top: 15px;
+        }
+        .op3 >label{
+            margin-left: 9px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+        /* REGEX */
+        [class*="input-3"]{
+            margin-bottom: 15px;
+            width:350px;
+            height:25px;
+        }
+        /* REGEX */
+        .op3 >textarea{
+            margin-bottom: 15px;
+            width:350px;
+            height:200px;
+        }
+        .op3 > div input[name="submit"]{
+
+            text-align: center;
+            margin: 0 auto;
+            width: 100px;
+            height: 40px;
+            background-color: #64b5f6;
+            color:white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="h1-1" style="text-align: center;">RETOS - SEMANA 2</h1>
+        <h2 style="text-align: center;">OPCIÓN 1</h2>
+        <br>
+    </header>
+    <main>
+        <section class="sec1">
+            <form class="op1">
+                <h2>Create your account</h2>
+                <h3>This is step 1</h3>
+                <input
+                name="email"
+                type="email"
+                placeholder="Email"
+                required
+                >
+                <br>
+                <input
+                name="password"
+                type="password"
+                placeholder="Password">
+                <br>
+                <input
+                name="confirmpassword"
+                type="password"
+                placeholder="Confirm Password">
+                <br>
+                <input
+                name="next"
+                type="submit"
+                value="Next">
+            </form>
+            <br>
+            <hr>
+        </section>
+        <section class="sec2">
+            <h2 style="text-align: center;">OPCIÓN 2</h2>
+            <form class="op2">
+                <h2>Sign Up</h2>
+                <label>First Name</label>
+                <input
+                name="first name"
+                type="text"
+                required
+                minlength="6">
+                <label>Age</label>
+                <input
+                name="age"
+                type="number"
+                required
+                min="1"
+                max="120">
+                <label>Income</label>
+                <input
+                name="income"
+                type="number">
+                <label>More Info</label>
+                <br>
+                <textarea                 
+                name="textarea"
+                required
+                minlength="6"></textarea>
+                <br>           
+                <label>Gender</label>
+                <br>
+                <input
+                type="radio" name="gender" >Male
+                <input
+                type="radio" name="gender" >Female
+                <input
+                type="radio" name="gender" >Trans
+                <br>
+                <label>Plan</label>
+                <br>
+                <select>
+                    <option selected disabled>Select Plan</option>
+                    <option value="plan 1">plan 1</option>
+                    <option value="plan 2">plan 2</option>
+                    <option value="plan 3">plan 3</option>
+                    <option value="plan 4">plan 4</option>
+                </select>
+                <br>
+                <input
+                name="suscribe"
+                type="checkbox"
+                value="Suscribe To Newsletter">Suscribe to Newsletter
+                <br>
+                <input
+                name="update"
+                type="submit"
+                value="Update"
+                >
+            </form>
+        </section>
+        <section class="sec3">
+            <h2 style="text-align: center;">OPCIÓN 3</h2>
+            <form class="op3">
+                <h3 style="text-align: center;" >Contact Form</h3>
+                <br>
+                <label for="first-name">First Name</label>
+                <br>
+                <input class="input-3"
+                name="firstname"
+                type="text"
+                placeholder="John"
+                required
+                minlength="6">
+                <br>
+                <label for="last-name">Last Name</label>
+                <br>
+                <input class="input-3"
+                name="lastname"
+                type="text"
+                placeholder="Doe"
+                required
+                minlength="6">
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input class="input-3"
+                name="email"
+                type="email"
+                placeholder="you@domain.com"
+                required>
+                <br>
+                <label for="message">Message</label>
+                <br>
+                <textarea class="input3"
+                name="textarea"
+                placeholder="Enter your message here ..."
+                minlength="20"
+                maxlength="140"></textarea>
+                <br>
+                <div style="text-align: center;">
+                    <input
+                    name="submit"
+                    type="submit"
+                    value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>© Luis Angel Barrios Lipa</h3>
+    </footer>
+    
+</body>
+</html>
